@@ -1731,3 +1731,8 @@ main h1 + p { line-height: 1.65; }
 @media (max-width: 480px) {
   .workspace-toolbar > div:has(> select) { flex-basis: calc(50% - 6px); }
 }
+
+main > header { min-width: 0; }
+main > header > button, main > header > span, main > header > div:last-child { flex-shrink: 0; white-space: nowrap; }
+main > header > a { min-width: 0; flex: 1 1 0; }
+@media (min-width: 768px) and (max-width: 1023px) { main > header > div:last-child > span { display: none; } }
