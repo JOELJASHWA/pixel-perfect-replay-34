@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Preserve imported route markup and page-specific CSS; source fidelity requires focused repairs rather than redesigns.
+- Load imported typography once through the global stylesheet so direct page visits share the same font files and weights.
+- Keep fictional investigation data and filters browser-safe; imported scenarios do not imply a live service connection.

@@ -1,0 +1,141 @@
+[
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "Toggle Sidebar / Escape",
+    "expected": "collapse desktop sidebar / open and dismiss phone navigation",
+    "observed": "matched",
+    "status": "passed"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "scrollContainer": "document",
+    "trigger": "filters, search, site selection, replay, pause, reset, destination",
+    "expected": "matched incident and timeline evidence",
+    "observed": "all matched",
+    "status": "passed"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "wheel scrolling and navigation links",
+    "scrollPositions": [
+      430,
+      430
+    ],
+    "expected": "all sections visible and source paths retained locally",
+    "observed": [
+      {
+        "text": "Overview",
+        "href": "/"
+      },
+      {
+        "text": "AMI Monitoring",
+        "href": "/ami"
+      },
+      {
+        "text": "SCADA Monitoring",
+        "href": "/scada"
+      },
+      {
+        "text": "Detection Alerts",
+        "href": "/alerts"
+      },
+      {
+        "text": "Event Explorer",
+        "href": "/events"
+      },
+      {
+        "text": "Explainability",
+        "href": "/explainability"
+      },
+      {
+        "text": "Dataset Analytics",
+        "href": "/analytics"
+      },
+      {
+        "text": "System Settings",
+        "href": "/settings"
+      },
+      {
+        "text": "View all alerts",
+        "href": "/alerts"
+      }
+    ],
+    "status": "passed",
+    "screenshots": "advanced-desktop-scroll-*.png"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "Toggle Sidebar / Escape",
+    "expected": "collapse desktop sidebar / open and dismiss phone navigation",
+    "observed": "matched",
+    "status": "passed"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "scrollContainer": "document",
+    "trigger": "filters, search, site selection, replay, pause, reset, destination",
+    "expected": "matched incident and timeline evidence",
+    "observed": "all matched",
+    "status": "passed"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "wheel scrolling and navigation links",
+    "scrollPositions": [
+      2171,
+      2771,
+      2906,
+      2906,
+      2906,
+      2906,
+      2906
+    ],
+    "expected": "all sections visible and source paths retained locally",
+    "observed": [
+      {
+        "text": "Overview",
+        "href": "/"
+      },
+      {
+        "text": "AMI Monitoring",
+        "href": "/ami"
+      },
+      {
+        "text": "SCADA Monitoring",
+        "href": "/scada"
+      },
+      {
+        "text": "Detection Alerts",
+        "href": "/alerts"
+      },
+      {
+        "text": "Event Explorer",
+        "href": "/events"
+      },
+      {
+        "text": "Explainability",
+        "href": "/explainability"
+      },
+      {
+        "text": "Dataset Analytics",
+        "href": "/analytics"
+      },
+      {
+        "text": "System Settings",
+        "href": "/settings"
+      },
+      {
+        "text": "View all alerts",
+        "href": "/alerts"
+      }
+    ],
+    "status": "passed",
+    "screenshots": "advanced-phone-scroll-*.png"
+  }
+]
