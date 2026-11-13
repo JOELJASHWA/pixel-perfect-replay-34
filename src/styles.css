@@ -9,6 +9,7 @@
 @source "../src";
 @import "tw-animate-css";
 @import "./styles/fonts.css";
+@import "./styles/investigation-summary.css";
 
 @custom-variant dark (&:is(.dark *));
 
