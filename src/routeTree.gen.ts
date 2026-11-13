@@ -10,33 +10,128 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AlertsRouteImport } from './routes/alerts'
+import { Route as AmiRouteImport } from './routes/ami'
+import { Route as AnalyticsRouteImport } from './routes/analytics'
+import { Route as EventsRouteImport } from './routes/events'
+import { Route as ExplainabilityRouteImport } from './routes/explainability'
+import { Route as ScadaRouteImport } from './routes/scada'
+import { Route as SettingsRouteImport } from './routes/settings'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AlertsRoute = AlertsRouteImport.update({
+  id: '/alerts',
+  path: '/alerts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AmiRoute = AmiRouteImport.update({
+  id: '/ami',
+  path: '/ami',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalyticsRoute = AnalyticsRouteImport.update({
+  id: '/analytics',
+  path: '/analytics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventsRoute = EventsRouteImport.update({
+  id: '/events',
+  path: '/events',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExplainabilityRoute = ExplainabilityRouteImport.update({
+  id: '/explainability',
+  path: '/explainability',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ScadaRoute = ScadaRouteImport.update({
+  id: '/scada',
+  path: '/scada',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/alerts': typeof AlertsRoute
+  '/ami': typeof AmiRoute
+  '/analytics': typeof AnalyticsRoute
+  '/events': typeof EventsRoute
+  '/explainability': typeof ExplainabilityRoute
+  '/scada': typeof ScadaRoute
+  '/settings': typeof SettingsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/alerts': typeof AlertsRoute
+  '/ami': typeof AmiRoute
+  '/analytics': typeof AnalyticsRoute
+  '/events': typeof EventsRoute
+  '/explainability': typeof ExplainabilityRoute
+  '/scada': typeof ScadaRoute
+  '/settings': typeof SettingsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/alerts': typeof AlertsRoute
+  '/ami': typeof AmiRoute
+  '/analytics': typeof AnalyticsRoute
+  '/events': typeof EventsRoute
+  '/explainability': typeof ExplainabilityRoute
+  '/scada': typeof ScadaRoute
+  '/settings': typeof SettingsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/alerts'
+    | '/ami'
+    | '/analytics'
+    | '/events'
+    | '/explainability'
+    | '/scada'
+    | '/settings'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/alerts'
+    | '/ami'
+    | '/analytics'
+    | '/events'
+    | '/explainability'
+    | '/scada'
+    | '/settings'
+  id:
+    | '__root__'
+    | '/'
+    | '/alerts'
+    | '/ami'
+    | '/analytics'
+    | '/events'
+    | '/explainability'
+    | '/scada'
+    | '/settings'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AlertsRoute: typeof AlertsRoute
+  AmiRoute: typeof AmiRoute
+  AnalyticsRoute: typeof AnalyticsRoute
+  EventsRoute: typeof EventsRoute
+  ExplainabilityRoute: typeof ExplainabilityRoute
+  ScadaRoute: typeof ScadaRoute
+  SettingsRoute: typeof SettingsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +143,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/alerts': {
+      id: '/alerts'
+      path: '/alerts'
+      fullPath: '/alerts'
+      preLoaderRoute: typeof AlertsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ami': {
+      id: '/ami'
+      path: '/ami'
+      fullPath: '/ami'
+      preLoaderRoute: typeof AmiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analytics': {
+      id: '/analytics'
+      path: '/analytics'
+      fullPath: '/analytics'
+      preLoaderRoute: typeof AnalyticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/events': {
+      id: '/events'
+      path: '/events'
+      fullPath: '/events'
+      preLoaderRoute: typeof EventsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/explainability': {
+      id: '/explainability'
+      path: '/explainability'
+      fullPath: '/explainability'
+      preLoaderRoute: typeof ExplainabilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/scada': {
+      id: '/scada'
+      path: '/scada'
+      fullPath: '/scada'
+      preLoaderRoute: typeof ScadaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AlertsRoute: AlertsRoute,
+  AmiRoute: AmiRoute,
+  AnalyticsRoute: AnalyticsRoute,
+  EventsRoute: EventsRoute,
+  ExplainabilityRoute: ExplainabilityRoute,
+  ScadaRoute: ScadaRoute,
+  SettingsRoute: SettingsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
