@@ -1,0 +1,324 @@
+[
+  {
+    "title": "Overview & Investigation \u00b7 SmartGrid Sentinel",
+    "heading": "Overview",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "Where it happens. How it unfolds.",
+      "AMI vs SCADA events",
+      "Ground-truth scenario distribution",
+      "Recent detection events",
+      "Captured source connection"
+    ],
+    "route": "/",
+    "viewport": "desktop",
+    "scroll": 430,
+    "errors": []
+  },
+  {
+    "title": "AMI Monitoring \u00b7 SmartGrid Sentinel",
+    "heading": "AMI Monitoring",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "Access activity",
+      "Destination approval \u00b7 returned events"
+    ],
+    "route": "/ami",
+    "viewport": "desktop",
+    "scroll": 186,
+    "errors": []
+  },
+  {
+    "title": "SCADA Monitoring \u00b7 SmartGrid Sentinel",
+    "heading": "SCADA Monitoring",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "Voltage & current telemetry",
+      "Access activity",
+      "Destination approval \u00b7 returned events"
+    ],
+    "route": "/scada",
+    "viewport": "desktop",
+    "scroll": 622,
+    "errors": []
+  },
+  {
+    "title": "Detection Alerts \u00b7 SmartGrid Sentinel",
+    "heading": "Detection Alerts",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [],
+    "route": "/alerts",
+    "viewport": "desktop",
+    "scroll": 0,
+    "errors": []
+  },
+  {
+    "title": "Event Explorer \u00b7 SmartGrid Sentinel",
+    "heading": "Event Explorer",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [],
+    "route": "/events",
+    "viewport": "desktop",
+    "scroll": 0,
+    "errors": []
+  },
+  {
+    "title": "Explainability \u00b7 SmartGrid Sentinel",
+    "heading": "Explainability",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "Explainable rule-based detection"
+    ],
+    "route": "/explainability",
+    "viewport": "desktop",
+    "scroll": 0,
+    "errors": []
+  },
+  {
+    "title": "Dataset Analytics \u00b7 SmartGrid Sentinel",
+    "heading": "Dataset Analytics",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "AMI vs SCADA records",
+      "Risk distribution \u00b7 alerts only",
+      "Alert distribution by environment",
+      "Ground-truth reference distribution"
+    ],
+    "route": "/analytics",
+    "viewport": "desktop",
+    "scroll": 0,
+    "errors": []
+  },
+  {
+    "title": "System Settings \u00b7 SmartGrid Sentinel",
+    "heading": "System Settings",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "API connection",
+      "Research safeguards"
+    ],
+    "route": "/settings",
+    "viewport": "desktop",
+    "scroll": 0,
+    "errors": []
+  },
+  {
+    "viewport": "desktop",
+    "trigger": "Collapse Overview sidebar",
+    "status": "failed"
+  },
+  {
+    "title": "Overview & Investigation \u00b7 SmartGrid Sentinel",
+    "heading": "Overview",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "Where it happens. How it unfolds.",
+      "AMI vs SCADA events",
+      "Ground-truth scenario distribution",
+      "Recent detection events",
+      "Captured source connection"
+    ],
+    "route": "/",
+    "viewport": "phone",
+    "scroll": 2906,
+    "errors": []
+  },
+  {
+    "title": "AMI Monitoring \u00b7 SmartGrid Sentinel",
+    "heading": "AMI Monitoring",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "Access activity",
+      "Destination approval \u00b7 returned events"
+    ],
+    "route": "/ami",
+    "viewport": "phone",
+    "scroll": 2093,
+    "errors": []
+  },
+  {
+    "title": "SCADA Monitoring \u00b7 SmartGrid Sentinel",
+    "heading": "SCADA Monitoring",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "Voltage & current telemetry",
+      "Access activity",
+      "Destination approval \u00b7 returned events"
+    ],
+    "route": "/scada",
+    "viewport": "phone",
+    "scroll": 0,
+    "errors": []
+  },
+  {
+    "title": "Detection Alerts \u00b7 SmartGrid Sentinel",
+    "heading": "Detection Alerts",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [],
+    "route": "/alerts",
+    "viewport": "phone",
+    "scroll": 881,
+    "errors": []
+  },
+  {
+    "title": "Event Explorer \u00b7 SmartGrid Sentinel",
+    "heading": "Event Explorer",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [],
+    "route": "/events",
+    "viewport": "phone",
+    "scroll": 980,
+    "errors": []
+  },
+  {
+    "title": "Explainability \u00b7 SmartGrid Sentinel",
+    "heading": "Explainability",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "Explainable rule-based detection"
+    ],
+    "route": "/explainability",
+    "viewport": "phone",
+    "scroll": 1293,
+    "errors": []
+  },
+  {
+    "title": "Dataset Analytics \u00b7 SmartGrid Sentinel",
+    "heading": "Dataset Analytics",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "AMI vs SCADA records",
+      "Risk distribution \u00b7 alerts only",
+      "Alert distribution by environment",
+      "Ground-truth reference distribution"
+    ],
+    "route": "/analytics",
+    "viewport": "phone",
+    "scroll": 1560,
+    "errors": []
+  },
+  {
+    "title": "System Settings \u00b7 SmartGrid Sentinel",
+    "heading": "System Settings",
+    "headingFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "bodyFont": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+    "monoFont": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+    "sansLoaded": true,
+    "monoLoaded": true,
+    "overflow": false,
+    "sections": [
+      "API connection",
+      "Research safeguards"
+    ],
+    "route": "/settings",
+    "viewport": "phone",
+    "scroll": 28,
+    "errors": []
+  },
+  {
+    "viewport": "phone",
+    "trigger": "Overview navigation to AMI",
+    "status": "passed"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "trigger": "Combined filters, search, replay, pause, destination, reset, empty state, clear filters",
+    "status": "passed"
+  },
+  {
+    "route": "/",
+    "viewport": "phone",
+    "trigger": "Combined filters, search, replay, pause, destination, reset, empty state, clear filters",
+    "status": "passed"
+  },
+  {
+    "scope": "Inherited repository limitations",
+    "routes": [
+      "/ami",
+      "/scada",
+      "/alerts",
+      "/events",
+      "/explainability",
+      "/analytics",
+      "/settings"
+    ],
+    "status": "blocked",
+    "reason": "Repository contains captured controls without click handlers; no live source app URL supplied for comparison. Data views and charts are retained as captured, not live connections."
+  }
+]
