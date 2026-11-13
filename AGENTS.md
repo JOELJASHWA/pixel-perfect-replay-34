@@ -32,3 +32,5 @@ use the editor.
 - Preserve imported route markup and page-specific CSS; source fidelity requires focused repairs rather than redesigns.
 - Load imported typography once through the global stylesheet so direct page visits share the same font files and weights.
 - Keep fictional investigation data and filters browser-safe; imported scenarios do not imply a live service connection.
+
+- AI investigation summaries use a same-origin streaming server route with request-scoped Gateway Responses helpers; secrets and prompts stay server-side, and summaries never execute grid actions.

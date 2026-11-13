@@ -17,6 +17,7 @@ import { Route as EventsRouteImport } from './routes/events'
 import { Route as ExplainabilityRouteImport } from './routes/explainability'
 import { Route as ScadaRouteImport } from './routes/scada'
 import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as ApiInvestigationSummaryRouteImport } from './routes/api/investigation-summary'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -58,6 +59,11 @@ const SettingsRoute = SettingsRouteImport.update({
   path: '/settings',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiInvestigationSummaryRoute = ApiInvestigationSummaryRouteImport.update({
+  id: '/api/investigation-summary',
+  path: '/api/investigation-summary',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -68,6 +74,7 @@ export interface FileRoutesByFullPath {
   '/explainability': typeof ExplainabilityRoute
   '/scada': typeof ScadaRoute
   '/settings': typeof SettingsRoute
+  '/api/investigation-summary': typeof ApiInvestigationSummaryRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -78,6 +85,7 @@ export interface FileRoutesByTo {
   '/explainability': typeof ExplainabilityRoute
   '/scada': typeof ScadaRoute
   '/settings': typeof SettingsRoute
+  '/api/investigation-summary': typeof ApiInvestigationSummaryRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -89,6 +97,7 @@ export interface FileRoutesById {
   '/explainability': typeof ExplainabilityRoute
   '/scada': typeof ScadaRoute
   '/settings': typeof SettingsRoute
+  '/api/investigation-summary': typeof ApiInvestigationSummaryRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -101,6 +110,7 @@ export interface FileRouteTypes {
     | '/explainability'
     | '/scada'
     | '/settings'
+    | '/api/investigation-summary'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -111,6 +121,7 @@ export interface FileRouteTypes {
     | '/explainability'
     | '/scada'
     | '/settings'
+    | '/api/investigation-summary'
   id:
     | '__root__'
     | '/'
@@ -121,6 +132,7 @@ export interface FileRouteTypes {
     | '/explainability'
     | '/scada'
     | '/settings'
+    | '/api/investigation-summary'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -132,6 +144,7 @@ export interface RootRouteChildren {
   ExplainabilityRoute: typeof ExplainabilityRoute
   ScadaRoute: typeof ScadaRoute
   SettingsRoute: typeof SettingsRoute
+  ApiInvestigationSummaryRoute: typeof ApiInvestigationSummaryRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -192,6 +205,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SettingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/investigation-summary': {
+      id: '/api/investigation-summary'
+      path: '/api/investigation-summary'
+      fullPath: '/api/investigation-summary'
+      preLoaderRoute: typeof ApiInvestigationSummaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -204,6 +224,7 @@ const rootRouteChildren: RootRouteChildren = {
   ExplainabilityRoute: ExplainabilityRoute,
   ScadaRoute: ScadaRoute,
   SettingsRoute: SettingsRoute,
+  ApiInvestigationSummaryRoute: ApiInvestigationSummaryRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

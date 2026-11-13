@@ -1,0 +1,14 @@
+.ai-investigation { border-block: 1px solid var(--border); padding-block: 24px; }
+.ai-investigation-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:16px; }
+.ai-investigation-heading h2 { font-size:18px; line-height:1.4; font-weight:600; margin-top:5px; }
+.ai-investigation-heading h3 { font-size:14px; font-weight:600; }
+.ai-investigation-inputs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.ai-investigation-field { display:flex; flex-direction:column; gap:8px; font-size:13px; font-weight:500; min-width:0; }
+.ai-investigation-field textarea { min-height:150px; resize:vertical; line-height:1.6; font-weight:400; background:var(--sidebar); }
+.ai-investigation-actions { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin-top:16px; }
+.ai-investigation-actions p, .ai-investigation-status { font-size:12px; color:var(--muted-foreground); }
+.ai-investigation-error { color:var(--risk-high); font-size:13px; line-height:1.6; margin-top:16px; overflow-wrap:anywhere; }
+.ai-investigation-output { margin-top:24px; border-left:2px solid var(--primary); padding-left:18px; }
+.ai-investigation-text { white-space:pre-wrap; overflow-wrap:anywhere; font-size:14px; line-height:1.8; }
+.ai-investigation-status { margin-top:12px; }
+@media (max-width:1023px) { .ai-investigation-inputs { grid-template-columns:minmax(0,1fr); } }
